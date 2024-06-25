@@ -1,0 +1,144 @@
+/* styles2.css */
+
+/* Estilos para la Sección de Servicios */
+.services {
+    background-color: #fff; /* Fondo blanco para destacar */
+    padding: 80px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contenedor-servicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service {
+    flex: 1;
+    margin: 0 10px;
+    padding: 30px;
+    background: #f0f0f0; /* Fondo gris claro */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.n-service {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.service p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #777;
+}
+
+/* Estilos para la Galería de Imágenes */
+.gallery {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 80px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-galeria:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la Sección de Expertos */
+.experts {
+    background-color: #fff; /* Fondo blanco para destacar */
+    padding: 80px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cont-expert {
+    width: 30%;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background: #f0f0f0; /* Fondo gris claro */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cont-expert:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.cont-expert img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cont-expert img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de la Sección de Contacto en el Footer */
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-us p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Efecto de Transición en los Enlaces del Menú de Navegación */
+.menu-navegacion a {
+    font-size: 20px;
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-navegacion a:hover {
+    background-color: #555; /* Cambio de color de fondo al pasar el ratón */
+    transform: translateY(-3px); /* Efecto de levantamiento */
+}
+
+/* Efecto de Transición en los Enlaces del Pie de Página */
+footer a {
+    color: #fff; /* Color de texto 白 */
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}

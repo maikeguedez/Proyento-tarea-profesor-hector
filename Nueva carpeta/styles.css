@@ -1,0 +1,304 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #333; /* Color de texto principal */
+}
+
+/* Estilos para el Encabezado (Header) */
+header {
+    height: 100vh;
+    background: linear-gradient(to top, rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8)), url('img/foto1.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    color: #fff; /* Texto blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    transition: background 0.3s ease-in-out;
+}
+
+header:hover {
+    background: linear-gradient(to top, rgba(50, 50, 50, 0.8), rgba(25, 25, 25, 0.8)), url('img/foto1.jpg') no-repeat center center/cover;
+}
+
+/* Estilos para el Icono de Hamburger */
+.hamburguer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #333;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.hamburguer:hover {
+    background: #555;
+}
+
+.hamburguer span {
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Estilos para el Menú de Navegación */
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #3a3a3a, #555555);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(110%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 900; /* Asegurar que esté debajo del icono de hamburguesa */
+}
+
+.menu-navegacion.show {
+    transform: translateX(0);
+}
+
+.menu-navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 20px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-navegacion a:hover {
+    color: #bbbbbb; /* Cambio de color al pasar el ratón */
+    transform: scale(1.1);
+}
+
+/* Estilos para el Contenedor Principal */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+/* Estilos para el Subtítulo (Subtitulo) */
+.subtitulo {
+    font-weight: 400;
+    color: #555555;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+    transition: color 0.3s ease;
+}
+
+.subtitulo:hover {
+    color: #777;
+}
+
+/* Estilos para la Sección de Servicios (Services) */
+.contenedor-servicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-servicio img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.checklist-servicio {
+    width: 100%;
+    max-width: 600px;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.n-service {
+    margin-bottom: 10px;
+    color: #555555;
+    font-size: 24px;
+}
+
+.number {
+    display: inline-block;
+    background: linear-gradient(to top, #555555, #aaaaaa);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para la Galería (Gallery) */
+.gallery {
+    background: #e0e0e0;
+    padding: 60px 0;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.img-galeria:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Estilos para la Sección de Expertos (Experts) */
+.experts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cont-expert img {
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cont-expert img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.n-expert {
+    margin-top: 20px;
+    color: #555555;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.n-expert:hover {
+    color: #777;
+}
+
+/* Estilos para el Pie de Página (Footer) */
+footer {
+    background: #333333; /* Gris oscuro */
+    padding: 40px 20px;
+    color: #fff; /* Texto blanco */
+    text-align: center;
+}
+
+.brand {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.brand:hover {
+    color: #aaa;
+}
+
+.contact-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media .social-media-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff; /* Color del icono */
+    background-color: #555555; /* Color de fondo del icono */
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-media .social-media-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    background-color: #aaaaaa; /* Cambio de color de fondo al pasar el ratón */
+    color: #333333; /* Cambio de color del icono al pasar el ratón */
+}
+
+/* Animaciones al Desplazarse */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, .contenedor, .gallery, .experts, footer {
+    animation: fadeIn 1s ease-in-out;
+}

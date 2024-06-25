@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Eric Guadalupe</title>
+    <meta name="description" content="Descubre las motocicletas de tus sueños con nuestros servicios profesionales.">
+    <link rel="stylesheet" href="Nueva carpeta\styles.css">
+    <link rel="stylesheet" href="Nueva carpeta\styles2.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/074633e7-177d-44a8-81dd-892144dae06a.jpg" alt="Menu de navegación" class="hamburguer">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1>LA MOTO DE TUS SUEÑOS</h1>
+            <p class="copy">Profesional 2024.</p>
+        </div>
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="img/red-motor-biking-road.jpg" alt="Motocicleta roja en la carretera">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span> Servicio uno</h3>
+                        <p>Ofrecemos servicios de mantenimiento y reparación de motocicletas.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span> Servicio dos</h3>
+                        <p>Personalización de motocicletas según tus gustos y necesidades.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span> Servicio tres</h3>
+                        <p>Accesorios y repuestos originales para todas las marcas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galería</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/red-motor-biking-road.jpg" alt="Motocicleta roja en la carretera" class="img-galeria">
+                    <img src="img/299a85df-b053-46fd-ad3c-59cdd352f2f2.jpg" alt="Motocicleta en verde" class="img-galeria">
+                    <img src="img/driving-green-neon-color-motorcycle-road.jpg" alt="Motocicleta con luces neón verdes" class="img-galeria">
+                    <img src="img\7ad2471e-d1a9-40c9-8b1d-19c2b2a8becb.jpg" alt="Motocicleta en la ciudad" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/68e79240-15a8-472f-b60f-45095bc83d5b.jpg" alt="Especialista en motores">
+                    <h3 class="n-expert">Especialidad 1</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/074633e7-177d-44a8-81dd-892144dae06a.jpg" alt="Especialista en diseño">
+                    <h3 class="n-expert">Especialidad 2</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/104a8509-dd68-4091-a399-a9204a479166.jpg" alt="Especialista en accesorios">
+                    <h3 class="n-expert">Especialidad 3</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Eric Piñon </h2>
+                <p>Mira nuestras increíbles motocicletas.</p>
+                <p>profesor hector Lo quiero mucho❤️
+
+                </p> </p>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com" class="social-media-icon" aria-label="Facebook">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com" class="social-media-icon" aria-label="Twitter">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://instagram.com" class="social-media-icon" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburguer = document.querySelector('.hamburguer');
+            const menu = document.querySelector('.menu-navegacion');
+
+            hamburguer.addEventListener('click', function() {
+                hamburguer.classList.toggle('open');
+                menu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
